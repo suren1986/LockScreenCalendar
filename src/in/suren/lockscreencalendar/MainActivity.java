@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.CalendarView;
 
 public class MainActivity extends Activity {
 
@@ -32,10 +31,6 @@ public class MainActivity extends Activity {
                 findViewById(R.id.OptionsBar).setVisibility(View.INVISIBLE);
             }
         });
-        
-        CalendarView calendarView = (CalendarView) findViewById(R.id.Calendar);
-        calendarView.setMaxDate(1370016000000L);
-        calendarView.setMinDate(1367337600000L);
     }
 
     @Override

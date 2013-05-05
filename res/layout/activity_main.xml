@@ -17,20 +17,6 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:src="@raw/default_soda" />
-
-        <CalendarView
-            android:id="@+id/Calendar"
-            android:layout_width="300dip"
-            android:layout_height="600dip"
-            android:dateTextAppearance="@style/CalendarTextBlack"
-            android:selectedWeekBackgroundColor="#0000"
-            android:clipToPadding="false"
-            android:showWeekNumber="false" />
-        <!--
-        <GridLayout ></GridLayout>
-        <GridView ></GridView>
-        <TableLayout ></TableLayout>
-        -->
     </RelativeLayout>
 
     <LinearLayout
