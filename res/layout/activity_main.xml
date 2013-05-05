@@ -5,10 +5,58 @@
     android:screenOrientation="portrait"
     tools:context=".MainActivity" >
 
-    <ImageView
-        android:id="@+id/BackgroundImageContainer"
+    <RelativeLayout
+        android:id="@+id/Main"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:src="@raw/default_soda" />
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/BackgroundImageContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@raw/default_soda" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/OptionsBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#80000000"
+        android:padding="15dip" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip"
+            android:text="@string/action_choose_image"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip"
+            android:text="@string/action_save"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip"
+            android:text="@string/action_preview"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
 
 </RelativeLayout>
